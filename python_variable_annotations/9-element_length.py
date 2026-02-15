@@ -2,6 +2,9 @@
 """9-element_length.py"""
 
 
-def element_length(lst: list) -> list:
-    """Returns the length of each element of a list"""
-    return [len(i) for i in lst]
+import typing
+
+
+def element_length(lst: typing.Iterable[typing.Sequence]) -> typing.List[typing.Tuple[typing.Sequence, int]]:
+    """tuples and element lenght"""
+    return [(i, len(i)) for i in lst]
