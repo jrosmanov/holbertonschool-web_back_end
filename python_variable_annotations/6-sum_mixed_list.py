@@ -6,5 +6,5 @@ import typing
 
 
 def sum_mixed_list(mxd_lst: typing.List[typing.Union[int, float]]) -> float:
-    '''mixed elements sum'''
+    """mixed elements sum"""
     return sum(mxd_lst)
