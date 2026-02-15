@@ -6,6 +6,7 @@ import typing
 
 
 def make_multiplier(multiplier: float) -> typing.Callable[[float], float]:
+    """def making multiplayer"""
     def multiplier_func(number: float) -> float:
         """def multiplier"""
         return number * multiplier
