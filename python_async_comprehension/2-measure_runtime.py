@@ -17,4 +17,4 @@ async def measure_runtime() -> float:
 
 if __name__ == "__main__":
     total_runtime = asyncio.run(measure_runtime())
-    print (f"Total runtime: {total_runtime:.2f} seconds")
+    print(f"Total runtime: {total_runtime:.2f} seconds")
