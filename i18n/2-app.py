@@ -18,7 +18,7 @@ babel = Babel()
 
 
 def get_locale():
-    """Determine the best match for supported languages based on the request's Accept-Language header."""
+    """determine the best match with our supported languages."""
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
