@@ -1,15 +1,12 @@
-#!/usr/bin/env python3
-"""simple flask"""
 from flask import Flask, render_template
+
 
 app = Flask(__name__)
 
-
 @app.route('/')
-def main_page():
-    """main page"""
+def index():
+    """Render the 0-index.html template."""
     return render_template('0-index.html')
 
-
-if "__main__" == __name__:
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port="5000")
