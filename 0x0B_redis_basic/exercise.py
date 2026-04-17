@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""This module contains the Cache class and related functions to interact with Redis."""
+"""This module contains the Cache class"""
 import redis
 import uuid
 from typing import Union, Callable
@@ -7,7 +7,7 @@ from functools import wraps
 
 
 def call_history(method: Callable) -> Callable:
-    """Decorator to store the history of inputs and outputs for a particular function."""
+    """Decorator to store the history"""
     @wraps(method)
     def wrapper(self, *args, **kwargs):
         """Wrapper function."""
@@ -20,7 +20,7 @@ def call_history(method: Callable) -> Callable:
 
 
 def count_calls(method: Callable) -> Callable:
-    """Counts the number of times a method is called in the Cache() class."""
+    """Counts the number of times"""
     @wraps(method)
     def wrapper(self, *args, **kwargs):
         """Wrapper function."""
@@ -40,7 +40,7 @@ class Cache():
     @count_calls
     @call_history
     def store(self, data: Union[str, bytes, int, float]) -> str:
-        """Generates a random key (using uuid), stores the input data in Redis"""
+        """Generates a random key"""
         key = str(uuid.uuid4())
         self._redis.set(key, data)
         return key
