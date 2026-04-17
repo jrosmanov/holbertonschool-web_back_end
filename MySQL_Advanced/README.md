@@ -1,1 +1,1 @@
-MySQL fixed tasks
+SQL
