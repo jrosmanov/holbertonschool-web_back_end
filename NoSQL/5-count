@@ -1,2 +1,2 @@
-// counts number of docs in collection
+// NoSQL
 db.school.count()

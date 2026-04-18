@@ -1,2 +1,2 @@
-// deletes document in collection
+// NoSQL
 db.school.deleteMany({name: 'Holberton school'});

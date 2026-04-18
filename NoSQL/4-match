@@ -1,2 +1,2 @@
-// lists documents in collection with query
+// NoSQL
 db.school.find({name: "Holberton school"})
