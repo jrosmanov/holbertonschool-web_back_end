@@ -1,1 +1,3 @@
-### 0x12-Node_JS_basic
+# Node_JS_basic
+
+Holberton Node.js basic tasks.
